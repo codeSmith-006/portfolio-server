@@ -59,13 +59,6 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-// Example POST route
-app.post("/data", (req, res) => {
-  res.json({
-    message: "Data received",
-    yourData: req.body,
-  });
-});
 
 // Start the server
 const PORT = 5000;
