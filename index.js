@@ -41,7 +41,7 @@ async function run() {
     app.get("/feature-projects", async (req, res) => {
       try {
         const projects = await featureProjectCollection.find().toArray();
-        console.log("Projects: ", projects);
+        // console.log("Projects: ", projects);
         res.send(projects);
       } catch (err) {
         res.status(500).json({ error: "Failed to fetch feature projects" });
